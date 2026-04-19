@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --brown: #7a5c3a;
+    --dark-brown: #4a3420;
+    --light-brown: #c4a882;
+    --cream: #f9f5f0;
+    --white: #ffffff;
+    --text-dark: #2c2c2c;
+    --text-light: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--cream);
+    color: var(--text-dark);
+}
+
+nav {
+    background-color: var(--white);
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+}
+
+nav .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--dark-brown);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.page {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
+.page:target {
+    display: block;
+}
+
+.page:target ~ #home {
+    display: none;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    gap: 60px;
+}
+
+.home-photo-box img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--brown);
+}
+
+.home-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    color: var(--text-light);
+}
+
+.about-section,
+.skills-section,
+.projects-section,
+.certificate-section,
+.contact-section {
+    padding: 70px;
+}
+
+.about-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-photo img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 8px solid var(--brown);
+}
+.about-section h2{
+    margin-bottom: 22px;
+}
+.about-text p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+.skills-box {
+    background-color: var(--brown);
+    padding: 40px;
+    border-radius: 12px;
+    color: white;
+    max-width: 700px;
+    margin: auto;
+}
+
+.skills-box li {
+    padding: 8px 0;
+}
+.skills-section ul{
+    list-style: none;
+}
+.skills-category {
+    display: block;
+    margin-top: 15px;
+    color: var(--light-brown);
+}
+
+.project-box {
+    max-width: 500px;
+}
+
+.project-box img {
+    width: 140%;
+    height: 336px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.projects-section h2{
+    font-family: 'Playfair Display', serif;
+    background-color: var(--brown);
+    padding: 4px 10px 8px 8px;
+    border-radius: 11px;
+    margin-bottom: 14px;
+    width: 9%;
+    color: var(--white);
+}
+.project-box h3 {
+    margin-top: 15px;
+}
+
+.project-box p {
+    color: var(--text-light);
+    margin-top: 10px;
+    font-size: large;
+}
+
+.certificate-box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.certificate-box img {
+    width: 450px;
+    height: 314px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.certificate-section h2{
+    background-color: var(--brown);
+    width: 12%;
+    padding: 9px;
+    margin-bottom: 14px;
+    color: var(--white);
+    border-radius: 16px;
+}
+.certificate-section p{
+    margin-top: 146px;
+    font-size: larger;
+    background-color: var(--brown);
+    padding: 5px 14px 7px 14px;
+    color: #ffffff;
+    height: 34px;
+    border-radius: 46px;
+}
+.contact-form {
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid var(--light-brown);
+    border-radius: 6px;
+}
+
+.contact-form button {
+    padding: 12px 30px;
+    background: var(--brown);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.contact-section p{
+    margin-bottom: 16px;
+    margin-top: 13px;
+}
+
+footer {
+    background-color: var(--dark-brown);
+    color: var(--light-brown);
+    text-align: center;
+    padding: 20px;
+}
